@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+1. **Accent Color for Highlights and Buttons**: 
+   - Color: #25867d
+   - This color can be used for buttons, call-to-action elements, and other important highlights on the website. It's a cool and calming shade that can draw attention.
 
-## Getting Started
+2. **Secondary Accent Color**:
+   - Color: #1d343f
+   - You can use this color as a secondary accent, perhaps for hover effects on buttons or to provide contrast to the primary accent color.
 
-First, run the development server:
+3. **Text Color for Headers and Special Text**:
+   - Color: #3da959
+   - This color can be used for headers, headings, and any special text that needs to stand out. It's a vibrant and eye-catching color.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+4. **Text Color for Standard Text**:
+   - Color: #2e6b56
+   - This color can be used for the majority of your text content. It's a dark and readable color that contrasts well with a white background.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. **Link Color**:
+   - Color: #18578b
+   - This color can be used for links to make them distinguishable and recognizable. It complements the other colors nicely.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+6. **Button Hover Color**:
+   - Color: #20698b
+   - You can use this color as the hover effect for buttons. It provides a subtle change when users interact with buttons.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+7. **Background or Container Color**:
+   - Color: #1a669d
+   - This color can be used as a background color for sections or containers to add depth and variety to your layout.
 
-## Learn More
+8. **Border or Separator Color**:
+   - Color: #2e593f
+   - This color can be used for borders or separators between different sections or elements. It adds a touch of contrast.
 
-To learn more about Next.js, take a look at the following resources:
+9. **Footer or Additional Accent**:
+   - Color: #3c9569
+   - You can use this color for elements in the footer or as an additional accent color for specific sections.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Remember to maintain a good balance of these colors throughout the website to create a cohesive and visually appealing design. Use the primary accent color sparingly to guide the user's attention to important elements, and the secondary accent color for subtle highlights and hover effects.

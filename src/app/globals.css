@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Collapsible NavBar */
+@keyframes slideInRight {
+    from {
+      transform: translateX(320px)
+    }
+    to {
+      transform: translateX(0)
+    }
+  }
+  .menu{
+    animation-name: slideInRight;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+  }
+  
+  @keyframes opacityAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .links {
+    animation-name: opacityAnimation;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+  }
