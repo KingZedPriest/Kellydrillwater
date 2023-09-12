@@ -16,6 +16,7 @@ const config: Config = {
     },
     extend: {
       colors: {
+        whiteColor: "#F6F6F6",
         accentColor: "#25867d",
         secAccentColor: "#1d343f",
         headersColor: "#3da959",

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 //Import Icons
 import { FaWhatsapp } from "react-icons/fa";
@@ -13,44 +13,122 @@ export default function Header() {
   // For the Hamburger Menu
   const [visible, setVisible] = useState<boolean>(false);
   const setVisibility = () => {
-    setVisible(!visible)
-  }
+    setVisible(!visible);
+  };
   return (
     <main className="relative">
-      <div className="flex items-center justify-between px-6 sm:px-12 lg:px-24 md:px-18 py-10">
-        <Link href="/"><Image src={logo} alt="Kelly Drill Company Logo" className="w-10 cursor-pointer"/></Link> 
-        <div className="hidden md:flex gap-5">
-          <Link className="font-semibold hover:bg-secAccentColor hover:text-white duration-500 rounded-lg px-3 py-2" href="/">Home</Link>
-           <Link className="font-semibold hover:bg-secAccentColor hover:text-white duration-500 rounded-lg px-3 py-2" href="/services">Services</Link>
-           <Link className="font-semibold hover:bg-secAccentColor hover:text-white duration-500 rounded-lg px-3 py-2" href="/about">About Us</Link> 
-           <Link className="font-semibold hover:bg-secAccentColor hover:text-white duration-500 rounded-lg px-3 py-2" href="/contact">Contact Us</Link>
+      <div className="md:px-18 flex items-center justify-between px-6 py-10 sm:px-12 lg:px-24">
+        <Link href="/">
+          <Image
+            src={logo}
+            alt="Kelly Drill Company Logo"
+            className="w-10 cursor-pointer duration-500 hover:grayscale"
+          />
+        </Link>
+        <div className="hidden gap-5 md:flex">
+          <Link
+            className="hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white"
+            href="/"
+          >
+            Home
+          </Link>
+          <Link
+            className="hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white"
+            href="/services"
+          >
+            Services
+          </Link>
+          <Link
+            className="hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white"
+            href="/about"
+          >
+            About Us
+          </Link>
+          <Link
+            className="hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white"
+            href="/contact"
+          >
+            Contact Us
+          </Link>
         </div>
-        <div className="hidden md:flex items-center gap-5">
-            <Link className="text-green-600 duration-500 hover:-translate-y-2" href=""><FaWhatsapp size={30}/></Link>
-            <Link className="px-8 py-2 rounded-2xl font-semibold bg-accentColor hover:bg-secAccentColor duration-500 text-white hover:-translate-y-2" href="">Call Now</Link>
+        <div className="hidden items-center gap-5 md:flex">
+          <Link
+            className="text-green-600 duration-500 hover:-translate-y-2"
+            href=""
+          >
+            <FaWhatsapp size={30} />
+          </Link>
+          <Link
+            className="bg-accentColor hover:bg-secAccentColor rounded-2xl px-8 py-2 font-semibold text-white duration-500 hover:-translate-y-2"
+            href=""
+          >
+            Call Now
+          </Link>
         </div>
         <div className="md:hidden">
-      <BsFillMenuButtonWideFill size={24} className="cursor-pointer" onClick={setVisibility}/>
-    </div>
-      </div>        
-    {/* Collapsed Nav bar */}
-    
-  <div className={`${visible ? "menu" : "hidden"} md:hidden absolute h-screen w-80 top-0 right-0 bg-containerColor z-10`}>
-    <div className="bg-white p-2 rounded-[50%] w-12 flex items-center justify-center mt-10 ml-6">
-      <GiCrossedBones size={24} className="cursor-pointer" onClick={setVisibility}/>
-    </div>
-    <div className="flex flex-col gap-5 px-4 mt-10">
-    <Link className="font-semibold hover:border-r-4 hover:border-white hover:bg-secAccentColor text-white duration-500 rounded-lg px-3 py-2" href="/">Home</Link>
-    <Link className="font-semibold hover:border-r-4 hover:border-white hover:bg-secAccentColor text-white duration-500 rounded-lg px-3 py-2" href="/services">Services</Link>
-           <Link className="font-semibold hover:border-r-4 hover:border-white hover:bg-secAccentColor text-white duration-500 rounded-lg px-3 py-2" href="/about">About Us</Link> 
-           <Link className="font-semibold hover:border-r-4 hover:border-white hover:bg-secAccentColor text-white duration-500 rounded-lg px-3 py-2" href="/contact">Contact Us</Link>
-           <hr/>
-           <div className="flex items-center gap-5 mt-2">
-           <Link className="text-white duration-500 hover:-translate-y-2" href=""><FaWhatsapp size={30}/></Link>
-            <Link className="px-8 py-2 rounded-2xl font-semibold border-2 border-white duration-500 text-white hover:-translate-y-2" href="">Call Now</Link>
-           </div>
-    </div>
-  </div>
-  </main>
-  )  
+          <BsFillMenuButtonWideFill
+            size={24}
+            className="cursor-pointer"
+            onClick={setVisibility}
+          />
+        </div>
+      </div>
+      {/* Collapsed Nav bar */}
+
+      <div
+        className={`${
+          visible ? "menu" : "hidden"
+        } bg-containerColor absolute right-0 top-0 z-10 h-screen w-80 md:hidden`}
+      >
+        <div className="bg-whiteColor ml-6 mt-10 flex w-12 items-center justify-center rounded-[50%] p-2">
+          <GiCrossedBones
+            size={24}
+            className="cursor-pointer"
+            onClick={setVisibility}
+          />
+        </div>
+        <div className="mt-10 flex flex-col gap-5 px-4">
+          <Link
+            className="links hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            href="/"
+          >
+            Home
+          </Link>
+          <Link
+            className="links hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            href="/services"
+          >
+            Services
+          </Link>
+          <Link
+            className="links hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            href="/about"
+          >
+            About Us
+          </Link>
+          <Link
+            className="links hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            href="/contact"
+          >
+            Contact Us
+          </Link>
+          <hr />
+          <div className="mt-2 flex items-center gap-5">
+            <Link
+              className="links text-white duration-500 hover:-translate-y-2"
+              href=""
+            >
+              <FaWhatsapp size={30} />
+            </Link>
+            <Link
+              className="links rounded-3xl border-2 border-white px-8 py-2 font-semibold text-white duration-500 hover:-translate-y-2"
+              href=""
+            >
+              Call Now
+            </Link>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
 }
