@@ -59,7 +59,7 @@ export default function Header() {
             <FaWhatsapp size={30} />
           </Link>
           <Link
-            className="bg-accentColor hover:bg-secAccentColor rounded-2xl px-8 py-2 font-semibold text-white duration-500 hover:-translate-y-2"
+            className="bg-headersColor hover:bg-secAccentColor rounded-3xl px-8 py-3 font-semibold text-white duration-500 hover:-translate-y-2"
             href=""
           >
             Call Now
@@ -89,25 +89,25 @@ export default function Header() {
         </div>
         <div className="mt-10 flex flex-col gap-5 px-4">
           <Link
-            className="links hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            className=" hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
             href="/"
           >
             Home
           </Link>
           <Link
-            className="links hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            className=" hover:bg-secAccentColor hover: rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
             href="/services"
           >
             Services
           </Link>
           <Link
-            className="links hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            className=" hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
             href="/about"
           >
             About Us
           </Link>
           <Link
-            className="links hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            className=" hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
             href="/contact"
           >
             Contact Us
@@ -115,13 +115,13 @@ export default function Header() {
           <hr />
           <div className="mt-2 flex items-center gap-5">
             <Link
-              className="links text-white duration-500 hover:-translate-y-2"
+              className=" text-white duration-500 hover:-translate-y-2"
               href=""
             >
               <FaWhatsapp size={30} />
             </Link>
             <Link
-              className="links rounded-3xl border-2 border-white px-8 py-2 font-semibold text-white duration-500 hover:-translate-y-2"
+              className=" rounded-3xl border-2 border-white px-8 py-2 font-semibold text-white duration-500 hover:-translate-y-2"
               href=""
             >
               Call Now

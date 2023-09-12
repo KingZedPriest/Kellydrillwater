@@ -37,4 +37,10 @@
 h1.leading{
   line-height: 1.3;
   }
-  
+
+  /* body {
+    background-image: url("../../public/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 90% 30%;
+  } */
