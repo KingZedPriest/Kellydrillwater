@@ -44,3 +44,20 @@ h1.leading{
     background-size: 800px;
     background-position: 90% 30%;
   } */
+
+  /* Hide scrollbar on Chrome, Safari, and Opera */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1d343f;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background-color: #25867d;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}

@@ -31,7 +31,7 @@ export default function Footer(){
             <div className="flex flex-col">
             <h4 className="font-bold">Contact Us</h4>
             <p className="mt-2">Email: contactus@Kellydrillwater.com</p>
-            <p className="mt-2">Call: +234 80 6141 4868</p>
+            <p className="mt-2">Call: +234 81 6024 4412</p>
             <Link className="mt-2" href="/">FAQ</Link>         
             </div>
             <div className="flex flex-col">
@@ -39,7 +39,7 @@ export default function Footer(){
                 <p className="mt-2">Join our community and be the first to know of any update</p>
                 <div className="mt-8 flex flex-row items-center">
                     <input className="w-60 py-3 px-4 placeholder:text-sm rounded-md" type="email" name="email" id="email" placeholder="Enter Your Email..." />
-                    <button className="font-semibold md:w-40 bg-containerColor border-r-4 border-containerColor py-3 rounded-md hover:bg-white hover:text-containerColor duration-500" ><Link href="/">Subscribe</Link></button>
+                    <button className="font-semibold md:w-40 bg-headersColor border-r-4 border-headersColor py-3 rounded-md hover:bg-white hover:text-containerColor duration-500" ><Link href="/">Subscribe</Link></button>
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@ export default function Footer(){
                </div>
             </div>
             <div className="flex flex-row space-x-2 md:space-x-8 my-auto">
-            <Link href=""><BsFacebook className="cursor-pointer" size={20}/></Link>
+            <Link href="https://web.facebook.com/profile.php?id=100076353184277" target="_blank" rel="noopener noreferrer"><BsFacebook className="cursor-pointer" size={20}/></Link>
             <Link href=""><AiFillInstagram className="cursor-pointer" size={20}/></Link>
             <Link href=""><BsTwitter className="cursor-pointer" size={20}/></Link>
             <Link href=""><AiFillLinkedin className="cursor-pointer" size={20}/></Link>

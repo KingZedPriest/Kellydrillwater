@@ -54,8 +54,8 @@ export default function Header() {
         <div className="hidden items-center gap-5 md:flex">
           <Link
             className="text-green-600 duration-500 hover:-translate-y-2"
-            href=""
-          >
+            href="https://api.whatsapp.com/send?phone=%2B2348160244412&data=ARB3st80c0EmKqQPQM23W3wsTdIKITer1B8PXqpvBR2WKihPl7t3B_N03p0WwQ-l6mnWTAJDnKGM0Vo6wM9re9f82KivFkwu23AO-VwDsjoAHFUTIFh5jsTtukDd0nPhYoL-oxRwnwvhmxkDoKaxbIwmEA&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR1U0dhQUKjqpldb4yxJHYyBLiUJSq1SgDUVnDI5kIxAg9ZEeMWyF1IpCYk"
+            target="_blank" rel="noopener noreferrer">
             <FaWhatsapp size={30} />
           </Link>
           <Link
