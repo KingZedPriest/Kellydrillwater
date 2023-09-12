@@ -20,9 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`bg-white font-medium ${inter.className}`}>
         <Header />
-        <main className="px-6 sm:px-12 lg:px-24 md:px-18">
-           {children}
-        </main>
+        {children}
         <Footer />
       </body>
     </html>

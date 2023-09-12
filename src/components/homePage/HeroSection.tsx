@@ -26,7 +26,7 @@ export default function HeroSection() {
     };
   }, []);
   return (
-    <main className="flex py-20 flex-col-reverse items-center gap-10 md:flex-row md:justify-between">
+    <main className="flex py-20 flex-col-reverse items-center gap-10 md:flex-row md:justify-between px-6 sm:px-12 lg:px-24 md:px-18">
       <div className="lg:w-1/2">
         <h1 className="leading text-2xl font-[800] text-black sm:text-3xl md:text-4xl lg:text-5xl">
           Your <span className="typed-text"></span> Drilling Company{" "}
