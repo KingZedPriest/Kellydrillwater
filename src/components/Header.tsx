@@ -60,7 +60,7 @@ export default function Header() {
           </Link>
           <Link
             className="bg-headersColor hover:bg-secAccentColor rounded-3xl px-8 py-3 font-semibold text-white duration-500 hover:-translate-y-2"
-            href=""
+            href="tel:+2348160244412"
           >
             Call Now
           </Link>
@@ -74,11 +74,10 @@ export default function Header() {
         </div>
       </div>
       {/* Collapsed Nav bar */}
-
       <div
         className={`${
           visible ? "menu" : "hidden"
-        } bg-containerColor absolute right-0 top-0 z-10 h-screen w-80 md:hidden`}
+        } bg-containerColor fixed right-0 top-0 z-10 h-screen w-80 md:hidden`}
       >
         <div className="bg-whiteColor ml-6 mt-10 flex w-12 items-center justify-center rounded-[50%] p-2">
           <GiCrossedBones
