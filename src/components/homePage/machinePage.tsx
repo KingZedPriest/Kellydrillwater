@@ -13,7 +13,7 @@ export default function MachinePage() {
           <span className="text-headersColor">Heavy Machines </span> for your
           Projects.
         </h1>
-        <p className="mt-6 text-xs text-textColor md:text-sm lg:text-base">
+        <p className="mt-6 text-sm text-textColor md:text-base">
           Empower Your Projects with Our Robust Heavy Machinery Solutions,
           Providing You with the Strength and Reliability Needed to Accomplish
           Your Goals,
@@ -41,7 +41,7 @@ export default function MachinePage() {
         </div>
     </div>
       </div>
-      <p className="mt-10 text-xs text-textColor md:text-sm lg:text-base text-center">
+      <p className="mt-16 text-sm text-textColor md:text-base text-center">
           Experience Unprecedented Efficiency and Raw Power Like Never Before,
           Thanks to Our State-of-the-Art Heavy Machinery Solutions.
         </p>

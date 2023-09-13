@@ -22,21 +22,21 @@ export default function Footer(){
             </div>
             <div className="flex flex-col">
             <h4 className="font-bold">About Us</h4>
-            <Link className="mt-2" href="/">Our Drillers</Link>
-            <Link className="mt-2" href="/">Why Us?</Link>
-            <Link className="mt-2" href="/">Services</Link>
-            <Link className="mt-2" href="/">Project Tools</Link>
-            <Link className="mt-2" href="/">Partner With Us</Link>
+            <Link className="mt-2 hover:bg-headersColor duration-500 hover:px-2 rounded-md py-2" href="/">Our Drillers</Link>
+            <Link className="mt-2 hover:bg-headersColor duration-500 hover:px-2 rounded-md py-2" href="/">Why Us?</Link>
+            <Link className="mt-2 hover:bg-headersColor duration-500 hover:px-2 rounded-md py-2" href="/">Services</Link>
+            <Link className="mt-2 hover:bg-headersColor duration-500 hover:px-2 rounded-md py-2" href="/">Project Tools</Link>
+            <Link className="mt-2 hover:bg-headersColor duration-500 hover:px-2 rounded-md py-2" href="/">Partner With Us</Link>
             </div>
             <div className="flex flex-col">
             <h4 className="font-bold">Contact Us</h4>
             <p className="mt-2">Email: contactus@Kellydrillwater.com</p>
             <p className="mt-2">Call: +234 81 6024 4412</p>
-            <Link className="mt-2" href="/">FAQ</Link>         
+            <Link className="mt-2 hover:bg-headersColor duration-500 hover:px-2 rounded-md py-2" href="/">FAQ</Link>         
             </div>
             <div className="flex flex-col">
             <h4 className="font-bold">Newsletter</h4>
-                <p className="mt-2">Join our community and be the first to know of any update</p>
+                <p className="mt-2 capitalize">Join our community and be the first to know of any update.</p>
                 <div className="mt-8 flex flex-row items-center">
                     <input className="w-56 sm:w-60 py-3 px-4 focus:outline-headersColor text-black caret-headersColor placeholder:text-sm rounded-md" type="email" name="email" id="email" placeholder="Enter Your Email..." />
                     <button className="font-semibold md:w-40 bg-headersColor border-r-4 border-headersColor px-2 py-3 rounded-md hover:bg-white hover:text-containerColor duration-500" ><Link href="/">Subscribe</Link></button>
