@@ -61,3 +61,23 @@ body::-webkit-scrollbar-thumb:hover{
 body::-webkit-scrollbar-track {
   background: #f0f0f0;
 }
+
+  /* Homepage Overflow tracks */
+  .overflowContainer::-webkit-scrollbar {
+    width: 2px;
+    height: 6px;
+  }
+  
+  .overflowContainer::-webkit-scrollbar-thumb {
+    background-color: #1a669d;
+    border-radius: 10px;
+    cursor: grab;
+  }
+  
+  .overflowContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #18578b;
+  }
+  
+  .overflowContainer::-webkit-scrollbar-track {
+    background-color: #F0F0F0;
+  }
