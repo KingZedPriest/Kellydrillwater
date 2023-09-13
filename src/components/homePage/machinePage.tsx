@@ -41,7 +41,7 @@ export default function MachinePage() {
         </div>
     </div>
       </div>
-      <p className="mt-16 text-sm text-textColor md:text-base text-center">
+      <p className="mt-20 text-sm text-textColor md:text-base text-center">
           Experience Unprecedented Efficiency and Raw Power Like Never Before,
           Thanks to Our State-of-the-Art Heavy Machinery Solutions.
         </p>

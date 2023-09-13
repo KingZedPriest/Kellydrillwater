@@ -88,25 +88,25 @@ export default function Header() {
         </div>
         <div className="mt-10 flex flex-col gap-5 px-4">
           <Link
-            className=" hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            className=" hover:bg-secAccentColor rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
             href="/"
           >
             Home
           </Link>
           <Link
-            className=" hover:bg-secAccentColor hover: rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            className=" hover:bg-secAccentColor hover: rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
             href="/services"
           >
             Services
           </Link>
           <Link
-            className=" hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            className=" hover:bg-secAccentColor rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
             href="/about"
           >
             About Us
           </Link>
           <Link
-            className=" hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
+            className=" hover:bg-secAccentColor rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
             href="/contact"
           >
             Contact Us
