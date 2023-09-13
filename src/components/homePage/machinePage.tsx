@@ -7,7 +7,7 @@ export default function MachinePage() {
         setIsExpanded(!isExpanded);
     }
   return (
-    <div className="md:px-18 bg-whiteColor px-6 py-36 sm:px-12 lg:px-24">
+    <div className="md:px-18 bg-whiteColor px-6 py-32 sm:px-12 lg:px-24">
       <div className="text-center">
         <h1 className="text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">
           <span className="text-headersColor">Heavy Machines </span> for your
@@ -17,11 +17,7 @@ export default function MachinePage() {
           Empower Your Projects with Our Robust Heavy Machinery Solutions,
           Providing You with the Strength and Reliability Needed to Accomplish
           Your Goals,
-        </p>
-        <p className="mt-1 text-xs text-textColor md:text-sm lg:text-base">
-          Experience Unprecedented Efficiency and Raw Power Like Never Before,
-          Thanks to Our State-of-the-Art Heavy Machinery Solutions.
-        </p>
+        </p>       
       </div>
       <div className="mt-20 flex gap-10 items-center">
         <div className="bg-white p-2 cursor-pointer rounded-[50%] shadow-md flex items-center md:hidden">
@@ -45,6 +41,10 @@ export default function MachinePage() {
         </div>
     </div>
       </div>
+      <p className="mt-10 text-xs text-textColor md:text-sm lg:text-base text-center">
+          Experience Unprecedented Efficiency and Raw Power Like Never Before,
+          Thanks to Our State-of-the-Art Heavy Machinery Solutions.
+        </p>
     </div>
   );
 }
