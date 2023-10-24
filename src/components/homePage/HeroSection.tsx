@@ -10,7 +10,7 @@ import MD from "../../../public/MD-modified.png";
 export default function HeroSection() {
   useEffect(() => {
     const options = {
-      strings: ['Trusted', 'Efficient', 'Advanced', 'Experienced', 'And Responsible'],
+      strings: ['Trusted', 'Efficient', 'Advanced', 'Experienced', 'Responsible'],
       smartBackspace: true,
       typeSpeed: 160,
       backSpeed: 200,
@@ -42,7 +42,7 @@ export default function HeroSection() {
           Start Your Project
         </button>
         <div className="mt-10 flex items-center gap-5 relative">
-        <Image src={MD} alt="Caleb Chukwuebuka Managing Director" className="w-12"/>
+        <Image src={MD} alt="Caleb Chukwuebuka, Managing Director" className="w-12"/>
         <div className="w-12 h-12 rounded-[50%] bg-headersColor flex items-center justify-center p-2 absolute left-10 -z-[1]">
          <h1 className="text-white text-xl">20+</h1> 
         </div>
