@@ -1,5 +1,5 @@
 import HeroSection from '@/components/homePage/HeroSection';
-import SecondSection from "@/components/homePage/machinePage";
+import SecondSection from '@/components/homePage/SecondSection';
 import ThirdSection from "@/components/homePage/machineExplanation";
 
 
