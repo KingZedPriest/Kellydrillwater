@@ -26,9 +26,9 @@ export default function HeroSection() {
     };
   }, []);
   return (
-    <main className="flex py-20 flex-col-reverse items-center gap-10 lg:flex-row lg:justify-between px-6 sm:px-12 lg:px-24 md:px-18">
+    <main className="flex py-20 flex-col-reverse items-center gap-10 lg:flex-row lg:justify-between px-6 sm:px-12 lg:px-24 md:px-18 text-sm md:text-base">
       <div className="lg:w-1/2">
-        <h1 className="leading text-2xl font-[800] text-black sm:text-3xl md:text-4xl lg:text-5xl">
+        <h1 className="leading text-2xl font-[800] text-black sm:text-3xl md:text-4xl lg:text-3xl xl:text-5xl">
           Your <span className="typed-text"></span> Drilling Company,{" "}
           <span className="text-headersColor">Kelly Drill.</span>
         </h1>
@@ -44,9 +44,9 @@ export default function HeroSection() {
         <div className="mt-10 flex items-center gap-5 relative">
         <Image src={MD} alt="Caleb Chukwuebuka, Managing Director" className="w-12"/>
         <div className="w-12 h-12 rounded-[50%] bg-headersColor flex items-center justify-center p-2 absolute left-10 -z-[1]">
-         <h1 className="text-white text-xl">20+</h1> 
+         <h1 className="text-white text-xl ml-2">20+</h1> 
         </div>
-        <p className="text-textColor w-40 text-sm absolute left-[5.5rem] font-semibold">Water Drillers that works on our Projects.</p>
+        <p className="text-textColor w-40 text-sm absolute left-[5.5rem] font-semibold">Water Drillers who work on our projects.</p>
       </div>
       </div>
       <div className="h-full lg:w-1/2">

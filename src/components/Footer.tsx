@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Footer(){
     return(
-        <main className="py-10 px-6 sm:px-12 lg:px-24 md:px-18 bg-secAccentColor text-white">
+        <main className="py-10 px-6 sm:px-12 lg:px-24 md:px-18 bg-secAccentColor text-white text-xs md:text-sm xl:text-base">
             <div className="text-white flex flex-col space-y-8 lg:space-y-0 lg:flex-row justify-between">
             <div className="flex flex-col">
                 <h4 className="font-bold">Locations</h4>
@@ -47,7 +47,7 @@ export default function Footer(){
             <div className="flex flex-row items-center">
                 <div className="border-r border-white pr-4">
                     <div className="p-4 bg-white">
-                        <Image src={logo} alt="Kellydrill Logo" className="w-10"/>  
+                        <Image src={logo} alt="Kellydrill Logo" className="w-32 md:w-10"/>  
                     </div>
                 </div>
                <div className="ml-4">
