@@ -61,14 +61,14 @@ export default function Header() {
             <Whatsapp size="40" variant="Broken"/>
           </Link>
           <Link
-            className="bg-headersColor hover:bg-secAccentColor rounded-3xl px-8 py-3 font-semibold text-white duration-500 hover:-translate-y-2"
+            className="bg-headersColor hover:bg-secAccentColor rounded-xl px-8 py-3 font-semibold text-white duration-500 hover:-translate-y-2"
             href="tel:+2348160244412"
           >
             Call Now
           </Link>
         </div>
         <div className="md:hidden">
-          <Menu className="cursor-pointer" onClick={setVisibility} size={35} variant="Broken"/>
+          <Menu className="cursor-pointer text-secAccentColor" onClick={setVisibility} size={35} variant="Broken"/>
         </div>
       </div>
       {/* Collapsed Nav bar */}
@@ -77,10 +77,10 @@ export default function Header() {
           visible ? "menu" : "hidden"
         } bg-containerColor fixed right-0 top-0 z-10 h-screen w-80 md:hidden`}
       >
-        <div className="bg-whiteColor ml-6 mt-10 flex w-12 items-center justify-center rounded-[50%] p-2">
+        <div className="bg-whiteColor ml-6 mt-10 flex w-12 items-center justify-center rounded-xl p-2">
           <GiCrossedBones
             size={24}
-            className="cursor-pointer"
+            className="cursor-pointer text-secAccentColor"
             onClick={setVisibility}
           />
         </div>
@@ -118,7 +118,7 @@ export default function Header() {
               <Whatsapp size="40" variant="Broken"/>
             </Link>
             <Link
-              className=" rounded-3xl border-2 border-white px-8 py-2 font-semibold text-white duration-500 hover:-translate-y-2"
+              className=" rounded-xl border-2 border-white px-8 py-2 font-semibold text-white duration-500 hover:-translate-y-2"
               href="tel:+2348160244412"
             >
               Call Now

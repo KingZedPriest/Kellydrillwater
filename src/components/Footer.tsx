@@ -17,6 +17,7 @@ export default function Footer(){
                 <p className="mt-2">Anambra</p>
                 <p className="mt-2">Enugu</p>
                 <p className="mt-2">Ebonyi</p>
+                <p className="mt-2">Delta</p>
                 <p className="mt-2">Abia</p>
                 <p className="mt-2">Imo</p>
             </div>

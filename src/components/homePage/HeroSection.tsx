@@ -26,7 +26,7 @@ export default function HeroSection() {
     };
   }, []);
   return (
-    <main className="flex py-20 flex-col-reverse items-center gap-10 lg:flex-row lg:justify-between px-6 sm:px-12 lg:px-24 md:px-18 text-sm md:text-base">
+    <main className="py-20 flex flex-col-reverse items-center gap-10 lg:flex-row lg:justify-between px-6 sm:px-12 lg:px-24 md:px-18 text-sm md:text-base">
       <div className="lg:w-1/2">
         <h1 className="leading text-2xl font-[800] text-black sm:text-3xl md:text-4xl lg:text-3xl xl:text-5xl">
           Your <span className="typed-text"></span> Drilling Company,{" "}
@@ -38,7 +38,7 @@ export default function HeroSection() {
           expertise to each project. With a focus on sustainability and
           innovation, we&apos;re your trusted partners for clean water solutions
         </p>
-        <button className="bg-headersColor border-headersColor hover:text-headersColor mt-10 font-semibold rounded-3xl border-2 px-4 py-3 text-white duration-500 hover:bg-white">
+        <button className="bg-headersColor border-headersColor hover:text-headersColor mt-10 font-semibold rounded-xl border-2 px-4 py-3 text-white duration-500 hover:bg-white">
           Start Your Project
         </button>
         <div className="mt-10 flex items-center gap-5 relative">
