@@ -27,11 +27,6 @@ const config: Config = {
         borderColor: "#2e593f",
         footerColor: "#3c9569",
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
     },
   },
   plugins: [],

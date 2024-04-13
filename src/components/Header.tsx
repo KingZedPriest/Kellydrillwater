@@ -1,8 +1,6 @@
 "use client";
 import { useState } from "react";
 //Import Icons
-import { FaWhatsapp } from "react-icons/fa";
-import { BsFillMenuButtonWideFill } from "react-icons/bs";
 import { GiCrossedBones } from "react-icons/gi";
 import { Menu, Whatsapp } from "iconsax-react";
 //Links Mechanism
@@ -72,11 +70,7 @@ export default function Header() {
         </div>
       </div>
       {/* Collapsed Nav bar */}
-      <div
-        className={`${
-          visible ? "menu" : "hidden"
-        } bg-containerColor fixed right-0 top-0 z-10 h-screen w-80 md:hidden`}
-      >
+      <div className={`${ visible ? "menu" : "hidden"} bg-linkColor fixed right-0 top-0 z-10 h-screen w-80 md:hidden`}>
         <div className="bg-whiteColor ml-6 mt-10 flex w-12 items-center justify-center rounded-xl p-2">
           <GiCrossedBones
             size={24}
