@@ -72,3 +72,20 @@ body::-webkit-scrollbar-track {
 .card:hover {
   transform: rotateY(19deg);
 }
+
+/* Gallery Section */
+.special::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+.special::-webkit-scrollbar-thumb {
+  background-color: #1d343f;
+}
+.special::-webkit-scrollbar-thumb:hover{
+  background-color: #25867d;
+}
+
+.special::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
