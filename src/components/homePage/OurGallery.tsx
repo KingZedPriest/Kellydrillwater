@@ -1,12 +1,9 @@
-import Video from "next-video";
 
 //Import Needed Images
 import galleryImg from "../../../public/kellyImg2.jpg";
 
 //Import Needed Videos
-import galleryVideo from "../../../videos/galleryVideo.mp4";
-import galleryVideo1 from "../../../videos/galleryVideo1.mp4";
-import galleryVideo2 from "../../../videos/galleryVideo2.mp4";
+
 
 const OurGallery = () => {
     return (
@@ -20,13 +17,13 @@ const OurGallery = () => {
                 <div className="flex flex-col gap-y-5 overflow-x-auto special">
                     <div className="flex gap-x-5">
                         <div className="h-60 w-80 mb-4 min-h-[15rem] min-w-[20rem]">
-                            <Video src={galleryVideo} accentColor="#3da959" className="h-full rounded-xl"/>
+                            {/* <Video src={galleryVideo} accentColor="#3da959" className="h-full rounded-xl"/> */}
                         </div>
                         <div className="bg-red-900 h-[32rem] min-h-[32rem] min-w-[20rem] w-80 mb-4">
 
                         </div>
                         <div className="bg-red-900 h-72 min-h-[18rem] min-w-[20rem] w-80 mb-4">
-                            <Video src={galleryVideo2} accentColor="#3da959"  className="h-full rounded-xl" />
+                            {/* <Video src={galleryVideo2} accentColor="#3da959"  className="h-full rounded-xl" /> */}
                         </div>
                     </div>
                     <div className="flex gap-x-5">
@@ -34,7 +31,7 @@ const OurGallery = () => {
 
                         </div>
                         <div className="bg-red-900 h-60 w-80 mb-4 min-h-[15rem] min-w-[20rem] -mt-[1rem]">
-                            <Video src={galleryVideo1} accentColor="#3da959"  className="h-full rounded-xl"/>
+                            {/* <Video src={galleryVideo1} accentColor="#3da959"  className="h-full rounded-xl"/> */}
                         </div>
                         <div className="bg-red-900 h-[32rem] min-h-[32rem] min-w-[20rem] w-80 mb-4 -mt-[15rem]">
 
