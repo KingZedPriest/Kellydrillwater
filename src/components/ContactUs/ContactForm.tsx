@@ -76,7 +76,7 @@ const ContactForm = () => {
                         <label className="cursor-pointer" htmlFor="message">Our Message</label>
                         <textarea onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}  value={message} name="message" id="message" className="rounded-md px-5 py-3 h-32 focus:outline-none border focus:border-headersColor resize-none caret-headersColor" placeholder="Your Message"></textarea>
                     </div>
-                    <input required type="submit" value={`${loading ? "Submitting" : "Submit"}`} name="submit" id="submit" className="mt-10 bg-headersColor text-white py-3 md:py-4 font-medium cursor-pointer rounded-md"/>
+                    <input required type="submit" value={`${loading ? "Submitting" : "Submit"}`} name="submit" id="submit" className="mt-10 bg-headersColor text-white py-3 md:py-4 font-medium cursor-pointer rounded-md border-2 border-headersColor hover:bg-white hover:text-headersColor"/>
                 </form>
             </div>
         </main>
