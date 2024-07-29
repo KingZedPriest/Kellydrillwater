@@ -52,7 +52,7 @@ const ContactForm = () => {
                         <div className="flex flex-col gap-y-1">
                             <p className="text-black/50">Address</p>
                             <p className="mt-2">Ukwuoji Awka, Anambra State.</p>
-                            <p>Nigeria</p>
+                            <p>Nigeria.</p>
                         </div>
                         <div className="flex flex-col gap-y-1 mt-8">
                             <p className="text-black/50">Contacts</p>

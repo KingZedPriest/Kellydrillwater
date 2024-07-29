@@ -1,10 +1,13 @@
 "use client";
+
 import { useState } from "react";
+
 //Import Icons
-import { GiCrossedBones } from "react-icons/gi";
-import { Menu, Whatsapp } from "iconsax-react";
+import { Category2, CloseSquare, Whatsapp } from "iconsax-react";
+
 //Links Mechanism
 import Link from "next/link";
+
 //Import Images and the Image component
 import logo from "../../public/mainLogo.png";
 import Image from "next/image";
@@ -65,19 +68,17 @@ export default function Header() {
             Call Now
           </Link>
         </div>
-        <div className="md:hidden">
-          <Menu className="cursor-pointer text-secAccentColor" onClick={setVisibility} size={35} variant="Broken"/>
+        <div className="md:hidden bg-accentColor p-2 rounded-md">
+          <Category2 className="cursor-pointer text-white" onClick={setVisibility} size={24} />
         </div>
       </div>
       {/* Collapsed Nav bar */}
-      <div className={`${ visible ? "menu" : "hidden"} bg-linkColor fixed right-0 top-0 z-10 h-screen w-80 md:hidden`}>
-        <div className="bg-whiteColor ml-6 mt-10 flex w-12 items-center justify-center rounded-xl p-2">
-          <GiCrossedBones
-            size={24}
-            className="cursor-pointer text-secAccentColor"
+      <div className={`${ visible ? "menu" : "hidden"} bg-accentColor fixed right-0 top-0 z-10 h-screen w-80 md:hidden`}>
+          <CloseSquare
+            size={30}
+            className="cursor-pointer text-white ml-6 mt-10 "
             onClick={setVisibility}
           />
-        </div>
         <div className="mt-10 flex flex-col gap-5 px-4">
           <Link
             className=" hover:bg-secAccentColor rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white"
@@ -109,7 +110,7 @@ export default function Header() {
               className=" text-white duration-500 hover:-translate-y-2"
               href="https://api.whatsapp.com/send?phone=%2B2348160244412&data=ARB3st80c0EmKqQPQM23W3wsTdIKITer1B8PXqpvBR2WKihPl7t3B_N03p0WwQ-l6mnWTAJDnKGM0Vo6wM9re9f82KivFkwu23AO-VwDsjoAHFUTIFh5jsTtukDd0nPhYoL-oxRwnwvhmxkDoKaxbIwmEA&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR1U0dhQUKjqpldb4yxJHYyBLiUJSq1SgDUVnDI5kIxAg9ZEeMWyF1IpCYk"
             >
-              <Whatsapp size="40" variant="Broken"/>
+              <Whatsapp size="36" variant="Bold"/>
             </Link>
             <Link
               className=" rounded-xl border-2 border-white px-8 py-2 font-semibold text-white duration-500 hover:-translate-y-2"
