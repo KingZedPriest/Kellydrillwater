@@ -1,3 +1,5 @@
+//Import Needed Components
+import ScrollReveal from "@/components/RevelOnScroll";
 import HeroSection from '@/components/homePage/HeroSection';
 import SecondSection from '@/components/homePage/SecondSection';
 import ThirdSection from "@/components/homePage/machineExplanation";
@@ -8,11 +10,18 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <SecondSection />
-      <ThirdSection />
-      <FourthSection />
-      <FifthSection />
-      
+      <ScrollReveal>
+        <SecondSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ThirdSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <FourthSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <FifthSection />
+      </ScrollReveal>
     </main>
   )
 }
