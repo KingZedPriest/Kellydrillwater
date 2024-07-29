@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Collapsible NavBar */
-@keyframes slideInRight {
-    from {
-      transform: translateX(320px)
-    }
-    to {
-      transform: translateX(0)
-    }
-  }
-  .menu{
-    animation-name: slideInRight;
-    animation-duration: 300ms;
-    animation-timing-function: ease-in;
-  }
-
-/* Hero Section */
 /* Custom Styles */
 h1.leading{
   line-height: 1.3;
