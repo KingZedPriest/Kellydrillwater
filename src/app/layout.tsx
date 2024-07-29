@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Kelly Drill Water Company",
-  description: "This is Kelly Drill Water Company Website",
+  description: "Expert water well drilling services for residential, agricultural, and commercial needs. With state-of-the-art equipment and decades of experience, we provide reliable, efficient, and environmentally responsible water solutions. From site assessment to well maintenance, trust Kelly Drill Water for all your groundwater needs.",
 };
 
 export default function RootLayout({
