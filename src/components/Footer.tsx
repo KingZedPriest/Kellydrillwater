@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Footer(){
     return(
-        <main className="py-10 px-6 sm:px-12 lg:px-24 md:px-18 bg-secAccentColor text-white text-xs md:text-sm xl:text-base">
+        <main className="py-10 px-6 sm:px-12 lg:px-24 md:px-18 bg-secAccentColor text-white">
             <div className="text-white flex flex-col space-y-8 lg:space-y-0 lg:flex-row justify-between">
             <div className="flex flex-col">
                 <h4 className="font-bold">Locations</h4>

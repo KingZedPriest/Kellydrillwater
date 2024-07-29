@@ -50,34 +50,33 @@ const ContactForm = () => {
                     <div className="w-1.5 bg-yellow-400 min-h-full"></div>
                     <div className="py-8">
                         <div className="flex flex-col gap-y-1">
-                            <p className="opacity-70">Address</p>
-                            <p className="mt-2">Einsteinstraat 26,</p>
-                            <p>3281 NJ Numansdorp,</p>
-                            <p>Netherlands</p>
+                            <p className="text-black/50">Address</p>
+                            <p className="mt-2">Ukwuoji Awka, Anambra State.</p>
+                            <p>Nigeria</p>
                         </div>
                         <div className="flex flex-col gap-y-1 mt-8">
-                            <p className="opacity-70">Contacts</p>
+                            <p className="text-black/50">Contacts</p>
                             <p className="mt-2">Contactus@kellydrillwater.com</p>
-                            <p>+3197006520618</p>
+                            <p>+234 816 024 4412</p>
                         </div>
                     </div>
                 </div>
             </section>
             <div className="lg:w-[45%] xl:w-[48%]">
-                <form onSubmit={onSubmit} className="w-full lg:w-[90%] xl:w-[80%] mx-auto border border-accentLight  flex flex-col gap-y-5 p-4 sm:p-6 md:p-8 xl:p-10">
+                <form onSubmit={onSubmit} className="w-full lg:w-[90%] xl:w-[80%] mx-auto border rounded-md flex flex-col gap-y-5 p-4 sm:p-6 md:p-8 xl:p-10">
                     <div className="flex flex-col gap-y-1">
                         <label className="cursor-pointer" htmlFor="name">Name</label>
-                        <input required value={name} onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)} type="text" name="name" id="name" className="px-5 py-3 focus:outline-none border focus:border-primary caret-primary" placeholder="John Doe" />
+                        <input required value={name} onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)} type="text" name="name" id="name" className="rounded-md px-5 py-3 focus:outline-none border focus:border-headersColor caret-headersColor" placeholder="John Doe" />
                     </div>
                     <div className="flex flex-col gap-y-1">
                         <label className="cursor-pointer" htmlFor="email">Email</label>
-                        <input required value={email} onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}  type="email" name="email" id="email" className="px-5 py-3 focus:outline-none border focus:border-primary caret-primary" placeholder="Johndoe@gmail.com" />
+                        <input required value={email} onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}  type="email" name="email" id="email" className="rounded-md px-5 py-3 focus:outline-none border focus:border-headersColor caret-headersColor" placeholder="Johndoe@gmail.com" />
                     </div>
                     <div className="flex flex-col gap-y-1">
                         <label className="cursor-pointer" htmlFor="message">Our Message</label>
-                        <textarea onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}  value={message} name="message" id="message" className="px-5 py-3 h-32 focus:outline-none border focus:border-primary resize-none caret-primary" placeholder="Your Message"></textarea>
+                        <textarea onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}  value={message} name="message" id="message" className="rounded-md px-5 py-3 h-32 focus:outline-none border focus:border-headersColor resize-none caret-headersColor" placeholder="Your Message"></textarea>
                     </div>
-                    <input required type="submit" value={`${loading ? "Submitting" : "Submit"}`} name="submit" id="submit" className="mt-10 bg-bgDark text-textDark  py-3 md:py-4 font-medium cursor-pointer"/>
+                    <input required type="submit" value={`${loading ? "Submitting" : "Submit"}`} name="submit" id="submit" className="mt-10 bg-headersColor text-white py-3 md:py-4 font-medium cursor-pointer rounded-md"/>
                 </form>
             </div>
         </main>
