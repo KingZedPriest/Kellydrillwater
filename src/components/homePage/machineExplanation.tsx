@@ -12,7 +12,7 @@ import { ArrowRight2 } from "iconsax-react";
 
 export default function Machines(){
     return(
-        <main className="md:px-18 bg-white px-6 py-32 sm:px-12 lg:px-12 text-xs md:text-sm xl:text-base overflow-hidden">
+        <main className="md:px-18 bg-white px-6 py-32 sm:px-12 lg:px-12 overflow-hidden">
             <div className="flex flex-col gap-y-3 text-center">
                 <p className="text-black/70 font-semibold">High-quality & Innovative</p>
                 <h1 className="font-bold text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-linkColor">Our Heavy Machinery</h1>
@@ -55,7 +55,7 @@ export default function Machines(){
                 </div>
             </div>
             <div className="mt-24 flex justify-center hover:-translate-y-1.5 duration-300">
-               <Link className="px-8 py-3 text-center border-2 border-linkColor text-linkColor font-semibold" href="/about">ALL PRODUCTS</Link> 
+               <Link className="px-8 py-3 text-center border-2 border-linkColor text-linkColor font-semibold rounded-md" href="/about">ALL PRODUCTS</Link> 
             </div>
         </main>       
     )

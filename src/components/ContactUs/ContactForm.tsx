@@ -44,10 +44,10 @@ const ContactForm = () => {
             <section className="lg:w-[45%] xl:w-[48%] flex flex-col gap-y-5">
                 <div className="flex gap-x-0.5 items-baseline">
                     <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold">Contact Us</h1>
-                    <div className="w-2 h-2 md:w-3 md:h-3 bg-yellow-400"></div>
+                    <div className="w-2 h-2 md:w-3 md:h-3 bg-[#ffcc33]"></div>
                 </div>
                 <div className="flex gap-x-5 mt-4">
-                    <div className="w-1.5 bg-yellow-400 min-h-full"></div>
+                    <div className="w-1.5 bg-[#ffcc33] min-h-full"></div>
                     <div className="py-8">
                         <div className="flex flex-col gap-y-1">
                             <p className="text-black/50">Address</p>

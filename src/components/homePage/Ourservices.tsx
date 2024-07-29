@@ -13,9 +13,9 @@ import { ArrowRight2 } from "iconsax-react";
 
 const Ourservices = () => {
     return ( 
-        <main className="md:px-18 bg-white px-6 py-32 sm:px-12 lg:px-24 text-xs md:text-sm xl:text-base">
+        <main className="md:px-18 bg-white px-6 py-32 sm:px-12 lg:px-24">
             <div className="flex flex-col gap-y-5 md:gap-y-0 md:flex-row md:justify-between md:items-baseline">
-                    <Image src={serviceImg} alt="Kelly Drill Water" className="h-80 w-80 sm:h-[24rem] sm:w-[24rem] md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] xl:w-[36rem] xl:h-[36rem] 2xl:w-[40rem] 2xl:h-[40rem]"/>
+                    <Image src={serviceImg} alt="Kelly Drill Water" className="rounded-2xl h-80 w-80 sm:h-[24rem] sm:w-[24rem] md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] xl:w-[36rem] xl:h-[36rem] 2xl:w-[40rem] 2xl:h-[40rem]"/>
                 <div className="flex flex-col gap-y-3 items-end text-right">
                     <h3 className="font-bold text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-linkColor max-w-[16ch]">Our Professional Services</h3>
                     <div className="w-12 sm:w-14 md:w-16 xl:w-20 2xl:w-24 h-1 sm:h-1.5 lg:h-2 bg-[#ffcc33] rounded-sm mt-2"></div>  
@@ -97,7 +97,7 @@ const Ourservices = () => {
                 </div>
             </div>
             <div className="mt-24 flex justify-center hover:-translate-y-1.5 duration-300">
-               <Link className="px-8 py-3 text-center border-2 border-linkColor text-linkColor font-semibold" href="/services">ALL SERVICES</Link> 
+               <Link className="px-8 py-3 text-center border-2 border-linkColor text-linkColor font-semibold rounded-md" href="/services">ALL SERVICES</Link> 
             </div>
         </main>
      );
