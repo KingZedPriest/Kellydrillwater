@@ -1,4 +1,4 @@
-
+// @ts-ignore
 import CountryRegion from "countryregionjs";
 
 const countryRegion = new CountryRegion();
