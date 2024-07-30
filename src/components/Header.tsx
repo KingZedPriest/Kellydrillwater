@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from 'next/navigation'
 
 //Import Icons
 import { Category2, CloseSquare, Whatsapp } from "iconsax-react";
@@ -13,6 +14,8 @@ import logo from "../../public/mainLogo.png";
 import Image from "next/image";
 
 export default function Header() {
+
+  const pathname = usePathname()
 
   // State for Hamburger Menu
   const [visible, setVisible] = useState<boolean>(false);
@@ -29,16 +32,16 @@ export default function Header() {
           <Image src={logo} alt="Kelly Drill Company Logo" className="w-10 cursor-pointer duration-500 hover:grayscale" />
         </Link>
         <div className="hidden gap-5 md:flex">
-          <Link className="hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white" href="/">
+          <Link className={`${pathname === "/" && "bg-secAccentColor rounded-lg px-3 py-2 text-white"} hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white`} href="/">
             Home
           </Link>
-          <Link className="hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white" href="/services">
+          <Link className={`${pathname === "/services" && "bg-secAccentColor rounded-lg px-3 py-2 text-white"} hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white`} href="/services">
             Services
           </Link>
-          <Link className="hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white" href="/about">
+          <Link className={`${pathname === "/about" && "bg-secAccentColor rounded-lg px-3 py-2 text-white"} hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white`} href="/about">
             About Us
           </Link>
-          <Link className="hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white" href="/contact">
+          <Link className={`${pathname === "/contact" && "bg-secAccentColor rounded-lg px-3 py-2 text-white"} hover:bg-secAccentColor rounded-lg px-3 py-2 font-semibold duration-500 hover:text-white`} href="/contact">
             Contact Us
           </Link>
         </div>
@@ -65,16 +68,16 @@ export default function Header() {
           onClick={setVisibility}
         />
         <div className="mt-10 flex flex-col gap-5 px-4">
-          <Link onClick={setVisibility} className=" hover:bg-secAccentColor rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white" href="/">
+          <Link onClick={setVisibility} className={`${pathname === "/" && "bg-secAccentColor px-3 border-r-4 border-white"} hover:bg-secAccentColor rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white`} href="/">
             Home
           </Link>
-          <Link onClick={setVisibility} className=" hover:bg-secAccentColor hover: rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white" href="/services">
+          <Link onClick={setVisibility} className={`${pathname === "/services" && "bg-secAccentColor px-3 border-r-4 border-white"} hover:bg-secAccentColor hover: rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white`} href="/services">
             Services
           </Link>
-          <Link onClick={setVisibility} className=" hover:bg-secAccentColor rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white" href="/about">
+          <Link onClick={setVisibility} className={`${pathname === "/about" && "bg-secAccentColor px-3 border-r-4 border-white"} hover:bg-secAccentColor rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white`} href="/about">
             About Us
           </Link>
-          <Link onClick={setVisibility} className=" hover:bg-secAccentColor rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white" href="/contact">
+          <Link onClick={setVisibility} className={`${pathname === "/contact" && "bg-secAccentColor px-3 border-r-4 border-white"} hover:bg-secAccentColor rounded-lg ml-3 hover:px-3 py-2 font-semibold text-white duration-500 hover:border-r-4 hover:border-white`} href="/contact">
             Contact Us
           </Link>
           <hr />

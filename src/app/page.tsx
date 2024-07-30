@@ -5,7 +5,7 @@ import SecondSection from '@/components/homePage/SecondSection';
 import ThirdSection from "@/components/homePage/machineExplanation";
 import FourthSection from "@/components/homePage/Ourservices";
 import FifthSection from "@/components/homePage/OurGallery";
-import Quote from "@/components/homePage/Quote";
+import SixthSection from "@/components/homePage/Quote";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
         <FifthSection />
       </ScrollReveal>
       <ScrollReveal>
-        <Quote />
+        <SixthSection />
       </ScrollReveal>
     </main>
   )
