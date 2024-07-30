@@ -40,7 +40,7 @@ export default function Footer() {
                     <p className="mt-2 capitalize">Join our community and be the first to know of any update.</p>
                     <div className="mt-8 flex flex-row items-center gap-x-1">
                         <input className="w-56 sm:w-60 py-3 px-4 focus:outline-headersColor text-black caret-headersColor placeholder:text-sm rounded-md" type="email" name="email" id="email" placeholder="Enter Your Email..." />
-                        <button className="font-semibold md:w-40 bg-headersColor border-r-4 border-headersColor px-2 py-3 rounded-md hover:bg-white hover:text-containerColor duration-500" ><Link href="/">Subscribe</Link></button>
+                        <button className="font-semibold md:w-40 bg-headersColor border-r-4 border-headersColor px-2 py-3 rounded-md hover:bg-white hover:text-containerColor duration-500" >Subscribe</button>
                     </div>
                 </div>
             </div>

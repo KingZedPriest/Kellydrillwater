@@ -1,12 +1,18 @@
 "use client"
+
 import { useEffect } from "react";
+
 // @ts-ignore
 import Typed from 'typed.js';
+
 // Import needed components
 import Image from "next/image";
+import Link from "next/link";
+
 // Images
 import heroImage from "../../../public/heroImage.png";
 import MD from "../../../public/MD-modified.png";
+
 export default function HeroSection() {
   useEffect(() => {
     const options = {
@@ -38,19 +44,21 @@ export default function HeroSection() {
           expertise to each project. With a focus on sustainability and
           innovation, we&apos;re your trusted partners for clean water solutions
         </p>
-        <button className="bg-headersColor border-headersColor hover:text-headersColor mt-10 font-semibold rounded-md border-2 px-4 py-3 text-white duration-500 hover:bg-white">
-          Start Your Project
-        </button>
-        <div className="mt-10 flex items-center gap-5 relative">
-        <Image src={MD} alt="Caleb Chukwuebuka, Managing Director" className="w-12"/>
-        <div className="w-12 h-12 rounded-[50%] bg-headersColor flex items-center justify-center p-2 absolute left-10 -z-[1]">
-         <h1 className="text-white text-xl ml-2">20+</h1> 
+        <div className="mt-10">
+          <Link href="#quote" className="bg-headersColor border-headersColor hover:text-headersColor font-semibold rounded-md border-2 px-4 py-3 text-white duration-500 hover:bg-white">
+            Start Your Project
+          </Link>
         </div>
-        <p className="text-textColor w-40 text-sm absolute left-[5.5rem] font-semibold">Water Drillers who work on our projects.</p>
-      </div>
+        <div className="mt-10 flex items-center gap-5 relative">
+          <Image src={MD} alt="Caleb Chukwuebuka, Managing Director" className="w-12" />
+          <div className="w-12 h-12 rounded-[50%] bg-headersColor flex items-center justify-center p-2 absolute left-10 -z-[1]">
+            <h1 className="text-white text-xl ml-2">20+</h1>
+          </div>
+          <p className="text-textColor w-40 text-sm absolute left-[5.5rem] font-semibold">Water Drillers who work on our projects.</p>
+        </div>
       </div>
       <div className="h-full lg:w-1/2">
-        <Image src={heroImage} alt="Kellydrill Drilling Machine" className="w-full hover:translate-x-4 duration-500"/>
+        <Image src={heroImage} alt="Kellydrill Drilling Machine" className="w-full hover:translate-x-4 duration-500" />
       </div>
     </main>
   );

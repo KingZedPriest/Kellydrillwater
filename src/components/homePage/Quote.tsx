@@ -74,7 +74,7 @@ const Quote = () => {
     };
 
     return (
-        <main className="px-6 py-32 sm:px-12 md:px-18 lg:px-24">
+        <main id="quote" className="px-6 py-32 sm:px-12 md:px-18 lg:px-24">
             <div className="flex flex-col gap-y-3 items-center text-center">
                 <h3 className="font-bold text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-linkColor max-w-[16ch]">Quote</h3>
                 <div className="w-12 sm:w-14 md:w-16 xl:w-20 2xl:w-24 h-1 sm:h-1.5 lg:h-2 bg-[#ffcc33] rounded-sm mt-2"></div>
@@ -114,6 +114,7 @@ const Quote = () => {
                             {maxLength - description.length} characters remaining
                         </div>
                     </div>
+                    <button type="submit" className="mt-10 w-full text-white font-medium bg-headersColor border-r-4 border-headersColor px-4 py-3 rounded-md hover:bg-white hover:text-containerColor duration-300" >Submit</button>
                 </form>
             </div>
         </main>
