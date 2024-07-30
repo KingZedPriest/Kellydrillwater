@@ -20,6 +20,7 @@ const states = [
 const maxLength = 100;
 
 const Quote = () => {
+    
     const [userState, setUserState] = useState("anambra");
     const [stateNumber, setStateNumber] = useState(5);
     const [localGovernment, setLocalGovernment] = useState<any>([]);
@@ -68,11 +69,8 @@ const Quote = () => {
                     </p>
                     <div className="flex gap-3 flex-wrap">
                         {states.map((state) => (
-                            <div
-                                key={state.name}
-                                onClick={() => handleStateSelection(state.name)}
-                                className={`${userState === state.name ? "bg-white border-headersColor border-2 text-headersColor" : "bg-headersColor text-white"} p-2 md:p-3 rounded-md w-fit capitalize cursor-pointer`}
-                            >
+                            <div key={state.name} onClick={() => handleStateSelection(state.name)}
+                                className={`${userState === state.name ? "bg-white border-headersColor border-2 text-headersColor" : "bg-headersColor text-white"} p-2 md:p-3 rounded-md w-fit capitalize cursor-pointer`}>
                                 {state.name}
                             </div>
                         ))}
@@ -82,12 +80,8 @@ const Quote = () => {
                             <LocationAdd size="18" color="#20698b" variant="Bold" />
                             Select the nearest location
                         </p>
-                        <select
-                            id="local-government"
-                            value={selectedLocalGovernment}
-                            onChange={handleLocalGovernmentChange}
-                            className="cursor-pointer w-full px-4 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-headersColor focus:border-transparent"
-                        >
+                        <select id="local-government" value={selectedLocalGovernment} onChange={handleLocalGovernmentChange}
+                            className="cursor-pointer w-full px-4 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-headersColor focus:border-transparent">
                             <option value="" disabled>
                                 Select an option
                             </option>
@@ -99,8 +93,7 @@ const Quote = () => {
                         </select>
                     </div>
                     <div className="flex flex-col mt-10">
-                        <textarea
-                            id="description"
+                        <textarea id="description"
                             className="p-4 h-24 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-headersColor focus:border-transparent resize-none"
                             maxLength={maxLength}
                             placeholder="Briefly Describe the Project"
