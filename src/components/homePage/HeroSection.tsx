@@ -38,7 +38,7 @@ export default function HeroSection() {
           expertise to each project. With a focus on sustainability and
           innovation, we&apos;re your trusted partners for clean water solutions
         </p>
-        <button className="bg-headersColor border-headersColor hover:text-headersColor mt-10 font-semibold rounded-xl border-2 px-4 py-3 text-white duration-500 hover:bg-white">
+        <button className="bg-headersColor border-headersColor hover:text-headersColor mt-10 font-semibold rounded-md border-2 px-4 py-3 text-white duration-500 hover:bg-white">
           Start Your Project
         </button>
         <div className="mt-10 flex items-center gap-5 relative">

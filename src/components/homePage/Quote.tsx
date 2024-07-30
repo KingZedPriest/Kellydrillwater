@@ -1,10 +1,11 @@
 "use client"
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, SetStateAction } from "react";
 // @ts-ignore
 import CountryRegion from "countryregionjs";
-import { Location } from "iconsax-react";
+import { Location, LocationAdd } from "iconsax-react";
 
+//Initialize the country region package
 const countryRegion = new CountryRegion();
 
 
@@ -13,12 +14,15 @@ const countryRegion = new CountryRegion();
 const Quote = () => {
 
     const states: string[] = ["anambra", "enugu", "ebonyi", "delta", "abia", "imo"]
+    const maxLength = 200;
 
     const [userState, setState] = useState<string>("anambra")
     const [stateNumber, setStateNumber] = useState<number>(5)
-    const [localGovernment, setLocalGovernment] = useState()
+    const [localGovernment, setLocalGovernment] = useState<any>()
+    const [selectedLocalGovernment, setSelectedLocalGovernment] = useState<string>('');
+    const [description, setDescription] = useState<string>('');
 
-    //For the 
+    //For the switch state number case
     useEffect(() => {
         switch (userState) {
             case "anambra":
@@ -44,17 +48,30 @@ const Quote = () => {
         }
     }, [userState])
 
+
+    //For fetching a users sub-state
     useEffect(() => {
         const fetchData = async () => {
             const subStates = await countryRegion.getLGAs(159, stateNumber);
             setLocalGovernment(subStates);
-        };  
+        };
         fetchData();
     }, [stateNumber]);
 
+    //Change user state function
     const selectState = (newState: string) => {
         setState(newState)
     }
+
+    //Handle user sub-state selection
+    const handleChange = (event: { target: { value: SetStateAction<string>; }; }) => {
+        setSelectedLocalGovernment(event.target.value);
+    };
+
+    //Handle the user description
+    const handleDescriptionChange = (event: { target: { value: SetStateAction<string>; }; }) => {
+        setDescription(event.target.value);
+    };
 
     return (
         <main className="px-6 py-32 sm:px-12 md:px-18 lg:px-24">
@@ -63,17 +80,41 @@ const Quote = () => {
                 <div className="w-12 sm:w-14 md:w-16 xl:w-20 2xl:w-24 h-1 sm:h-1.5 lg:h-2 bg-[#ffcc33] rounded-sm mt-2"></div>
                 <p className="text-black/70 max-w-[70ch]">Get Your Personalized Water Drilling Estimate.</p>
             </div>
-            <div className="bg-whiteColor p-4 mt-10 sm:w-[80%] md:w-[70%] lg:w-[60] xl:w-[50%] mx-auto rounded-md shadow-sm">
-
-                <p className="text-black/70 font-medium flex items-center gap-x-0.5 my-4"><span><Location size="20" color="#ffcc33" variant="Bold" /></span>Select the location of the project</p>
-                <div className="flex gap-3 flex-wrap">
-                    {states.map((state, index) => (
-                        <div key={index} onClick={(e: any) => selectState(state)} className={`${userState === state ? "bg-white border-headersColor border-2 text-headersColor" : "bg-headersColor text-white"} p-3 rounded-md w-fit capitalize cursor-pointer`}>{state}</div>
-                    ))}
-                </div>
-                <div className="my-4">
-
-                </div>
+            <div className="bg-whiteColor p-4 md:p-6 xl:p-8 mt-10 sm:w-[90%] md:w-[70%] xl:w-[60%] mx-auto rounded-md shadow-sm">
+                <form>
+                    <p className="text-black/70 font-medium flex items-center gap-x-0.5 my-4"><span><Location size="18" color="#20698b" variant="Bold" /></span>Select the state</p>
+                    <div className="flex gap-3 flex-wrap">
+                        {states.map((state, index) => (
+                            <div key={index} onClick={(e: any) => selectState(state)} className={`${userState === state ? "bg-white border-headersColor border-2 text-headersColor" : "bg-headersColor text-white"} p-2 md:p-3 rounded-md w-fit capitalize cursor-pointer`}>{state}</div>
+                        ))}
+                    </div>
+                    <div className="mt-10">
+                        <p className="text-black/70 font-medium my-2 flex items-center gap-x-0.5"><span><LocationAdd size="18" color="#20698b" variant="Bold" /></span>Select the nearest location</p>
+                        <select id="local-government" value={selectedLocalGovernment} onChange={handleChange} className="cursor-pointer w-full px-4 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-headersColor focus:border-transparent">
+                            <option value="" disabled>
+                                Select an option
+                            </option>
+                            {localGovernment && localGovernment.map((lg: any) => (
+                                <option key={lg.id} value={lg.name}>
+                                    {lg.name}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                    <div className="flex flex-col mt-10">
+                        <textarea
+                            id="description"
+                            className="p-4 h-24 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-headersColor focus:border-transparent resize-none"
+                            maxLength={maxLength}
+                            placeholder="Briefly Describe the Project"
+                            value={description}
+                            onChange={handleDescriptionChange}
+                        />
+                        <div className="mt-2 text-[10px] md:text-xs xl:text-sm text-gray-700">
+                            {maxLength - description.length} characters remaining
+                        </div>
+                    </div>
+                </form>
             </div>
         </main>
     );
