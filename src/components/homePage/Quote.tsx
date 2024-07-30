@@ -3,7 +3,7 @@
 import { useState, useEffect, SetStateAction } from "react";
 // @ts-ignore
 import CountryRegion from "countryregionjs";
-import { Location, LocationAdd } from "iconsax-react";
+import { EmojiHappy, Location, LocationAdd } from "iconsax-react";
 
 //Initialize the country region package
 const countryRegion = new CountryRegion();
@@ -74,14 +74,14 @@ const Quote = () => {
     };
 
     return (
-        <main id="quote" className="px-6 py-32 sm:px-12 md:px-18 lg:px-24">
+        <main id="quote" className="px-6 py-32 sm:px-12 md:px-18 lg:px-24 border border-black/10">
             <div className="flex flex-col gap-y-3 items-center text-center">
                 <h3 className="font-bold text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl text-linkColor max-w-[16ch]">Quote</h3>
                 <div className="w-12 sm:w-14 md:w-16 xl:w-20 2xl:w-24 h-1 sm:h-1.5 lg:h-2 bg-[#ffcc33] rounded-sm mt-2"></div>
                 <p className="text-black/70 max-w-[70ch]">Get Your Personalized Water Drilling Estimate.</p>
             </div>
-            <div className="bg-whiteColor p-4 md:p-6 xl:p-8 mt-10 sm:w-[90%] md:w-[70%] xl:w-[60%] mx-auto rounded-md shadow-sm">
-                <form>
+            <div className="bg-whiteColor mt-10 sm:w-[90%] md:w-[70%] xl:w-[60%] mx-auto rounded-md shadow-sm">
+                <form className="p-4 md:p-6 xl:p-8">
                     <p className="text-black/70 font-medium flex items-center gap-x-0.5 my-4"><span><Location size="18" color="#20698b" variant="Bold" /></span>Select the state</p>
                     <div className="flex gap-3 flex-wrap">
                         {states.map((state, index) => (
@@ -116,6 +116,10 @@ const Quote = () => {
                     </div>
                     <button type="submit" className="mt-10 w-full text-white font-medium bg-headersColor border-r-4 border-headersColor px-4 py-3 rounded-md hover:bg-white hover:text-containerColor duration-300" >Submit</button>
                 </form>
+                <div className="bg-white w-full py-8 px-4 flex items-center justify-center text-center gap-x-1">
+                    <EmojiHappy size="40" variant="Bold" color="#3da959" />
+                    <p>We will respond to your inquiry within 24 hours.</p>
+                </div>
             </div>
         </main>
     );

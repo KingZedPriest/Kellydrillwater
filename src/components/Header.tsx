@@ -52,7 +52,7 @@ export default function Header() {
             target="_blank" rel="noopener noreferrer">
             <Whatsapp size="40" variant="Broken" />
           </Link>
-          <Link className="bg-headersColor hover:bg-secAccentColor rounded-xl px-8 py-3 font-semibold text-white duration-500 hover:-translate-y-2" href="tel:+2348160244412">
+          <Link className="bg-headersColor hover:bg-secAccentColor rounded-md px-8 py-3 font-semibold text-white duration-500 hover:-translate-y-2" href="tel:+2348160244412">
             Call Now
           </Link>
         </div>
@@ -88,7 +88,7 @@ export default function Header() {
             >
               <Whatsapp size="36" variant="Bold" />
             </Link>
-            <Link onClick={setVisibility} className=" rounded-xl border-2 border-white px-8 py-2 font-semibold text-white duration-500 hover:-translate-y-2" href="tel:+2348160244412">
+            <Link onClick={setVisibility} className=" rounded-md border-2 border-white px-8 py-2 font-semibold text-white duration-500 hover:-translate-y-2" href="tel:+2348160244412">
               Call Now
             </Link>
           </div>
