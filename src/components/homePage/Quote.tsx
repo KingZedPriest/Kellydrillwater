@@ -20,7 +20,7 @@ const states = [
 const maxLength = 100;
 
 const Quote = () => {
-    
+
     const [userState, setUserState] = useState("anambra");
     const [stateNumber, setStateNumber] = useState(5);
     const [localGovernment, setLocalGovernment] = useState<any>([]);
@@ -42,14 +42,17 @@ const Quote = () => {
         fetchData();
     }, [stateNumber]);
 
+    //New State Handler
     const handleStateSelection = (newState: SetStateAction<string>) => {
         setUserState(newState);
     };
 
+    //New Local Government Handler
     const handleLocalGovernmentChange = (event: { target: { value: SetStateAction<string>; }; }) => {
         setSelectedLocalGovernment(event.target.value);
     };
 
+    //Description handler
     const handleDescriptionChange = (event: { target: { value: SetStateAction<string>; }; }) => {
         setDescription(event.target.value);
     };
@@ -109,7 +112,7 @@ const Quote = () => {
                     </button>
                 </form>
                 <div className="bg-white w-full py-8 px-4 flex items-center justify-center text-center gap-x-1">
-                    <EmojiHappy size="40" variant="Bold" color="#3da959" />
+                    <EmojiHappy size="32" variant="Bold" color="#3da959" />
                     <p>We will respond to your inquiry within 24 hours.</p>
                 </div>
             </div>
