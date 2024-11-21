@@ -17,12 +17,14 @@ const ContactForm = () => {
         setEmail("")
         setName("")
         setMessage("")
+        setLoading(false)
     }
 
     // OnSubmit function
     const onSubmit = (e: FormEvent) => {
 
         e.preventDefault()
+        setLoading(true)
         toast.message("Submitting your contact request...")
 
         const formData = { email: email.toLowerCase(), subject: "Notification", emailType: "notification", name, message };
@@ -33,6 +35,7 @@ const ContactForm = () => {
                 reset();
             },
             onError: (error: any) => {
+                console.log(`Contact form submission error ${error}`)
                 toast.error("Message not sent. Please try again later.");
                 reset();
             },
@@ -40,14 +43,14 @@ const ContactForm = () => {
     };
 
     return (
-        <main className="py-6 px-5 sm:px-10 md:px-20 xl:px-32 mt-20 flex flex-col gap-y-10 lg:flex-row lg:justify-between lg:items-center">
-            <section className="lg:w-[45%] xl:w-[48%] flex flex-col gap-y-5">
-                <div className="flex gap-x-0.5 items-baseline">
-                    <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold">Contact Us</h1>
-                    <div className="w-2 h-2 md:w-3 md:h-3 bg-[#ffcc33]"></div>
+        <main className="flex lg:flex-row flex-col lg:justify-between lg:items-center gap-y-10 mt-20 px-5 sm:px-10 md:px-20 xl:px-32 py-6">
+            <section className="flex flex-col gap-y-5 lg:w-[45%] xl:w-[48%]">
+                <div className="flex items-baseline gap-x-0.5">
+                    <h1 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">Contact Us</h1>
+                    <div className="bg-[#ffcc33] w-2 md:w-3 h-2 md:h-3"></div>
                 </div>
                 <div className="flex gap-x-5 mt-4">
-                    <div className="w-1.5 bg-[#ffcc33] min-h-full"></div>
+                    <div className="bg-[#ffcc33] w-1.5 min-h-full"></div>
                     <div className="py-8">
                         <div className="flex flex-col gap-y-1">
                             <p className="text-black/50">Address</p>
@@ -63,20 +66,20 @@ const ContactForm = () => {
                 </div>
             </section>
             <div className="lg:w-[45%] xl:w-[48%]">
-                <form onSubmit={onSubmit} className="w-full lg:w-[90%] xl:w-[80%] mx-auto border rounded-md flex flex-col gap-y-5 p-4 sm:p-6 md:p-8 xl:p-10">
+                <form onSubmit={onSubmit} className="flex flex-col gap-y-5 mx-auto p-4 sm:p-6 md:p-8 xl:p-10 border rounded-md w-full lg:w-[90%] xl:w-[80%]">
                     <div className="flex flex-col gap-y-1">
                         <label className="cursor-pointer" htmlFor="name">Name</label>
-                        <input required value={name} onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)} type="text" name="name" id="name" className="rounded-md px-5 py-3 focus:outline-none border focus:border-headersColor caret-headersColor" placeholder="John Doe" />
+                        <input required value={name} onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)} type="text" name="name" id="name" className="focus:border-headersColor px-5 py-3 border rounded-md focus:outline-none caret-headersColor" placeholder="John Doe" />
                     </div>
                     <div className="flex flex-col gap-y-1">
                         <label className="cursor-pointer" htmlFor="email">Email</label>
-                        <input required value={email} onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}  type="email" name="email" id="email" className="rounded-md px-5 py-3 focus:outline-none border focus:border-headersColor caret-headersColor" placeholder="Johndoe@gmail.com" />
+                        <input required value={email} onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}  type="email" name="email" id="email" className="focus:border-headersColor px-5 py-3 border rounded-md focus:outline-none caret-headersColor" placeholder="Johndoe@gmail.com" />
                     </div>
                     <div className="flex flex-col gap-y-1">
-                        <label className="cursor-pointer" htmlFor="message">Our Message</label>
-                        <textarea onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}  value={message} name="message" id="message" className="rounded-md px-5 py-3 h-32 focus:outline-none border focus:border-headersColor resize-none caret-headersColor" placeholder="Your Message"></textarea>
+                        <label className="cursor-pointer" htmlFor="message">Your Message</label>
+                        <textarea onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}  value={message} name="message" id="message" className="focus:border-headersColor px-5 py-3 border rounded-md h-32 focus:outline-none caret-headersColor resize-none" placeholder="Your Message"></textarea>
                     </div>
-                    <input required type="submit" value={`${loading ? "Submitting" : "Submit"}`} name="submit" id="submit" className="mt-10 bg-headersColor text-white py-3 md:py-4 font-medium cursor-pointer rounded-md border-2 border-headersColor hover:bg-white hover:text-headersColor"/>
+                    <input required type="submit" value={`${loading ? "Submitting" : "Submit"}`} name="submit" id="submit" className="border-2 border-headersColor bg-headersColor hover:bg-white mt-10 py-3 md:py-4 rounded-md font-medium text-white hover:text-headersColor cursor-pointer"/>
                 </form>
             </div>
         </main>
