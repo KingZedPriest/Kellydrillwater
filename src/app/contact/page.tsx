@@ -1,9 +1,9 @@
-//Import Needed Components
+//Components
 import CustomHeroSection from "@/components/CustomHeroSection";
 import ScrollReveal from "@/components/RevelOnScroll";
 import ContactForm from "@/components/ContactUs/ContactForm";
 
-//Import Needed Images
+//Images
 import contactUsImg from "../../../public/googleMap.jpg"
 
 

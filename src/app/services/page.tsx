@@ -1,5 +1,11 @@
+//Components
+import CustomHeroSection from "@/components/CustomHeroSection";
+
+//Images
+import serviceImg from "../../../public/kellyImg.jpg";
+
 export default function Service(){
     return(
-        <h1>Service Page</h1>
+        <CustomHeroSection imgSrc={serviceImg} pageName="Our Services" currentPage="our services" />
     )
 }

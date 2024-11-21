@@ -1,5 +1,12 @@
+//Components
+import CustomHeroSection from "@/components/CustomHeroSection";
+
+//Images
+import aboutImg from "../../../public/kellyImg5.jpg";
+
+
 export default function About(){
     return(
-        <h1>About Page</h1>
+        <CustomHeroSection imgSrc={aboutImg} pageName="About us" currentPage="about us" />
     )
 }
