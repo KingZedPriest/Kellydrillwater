@@ -1,10 +1,11 @@
+import { NextResponse } from "next/server";
+
 //Templates
 import NotificationTemplate from "../../../../email/NotifyTemplate";
 import QuoteTemplate from "../../../../email/QuoteTemplate";
 
 //Needed Utils and Lib
 import { render } from "@react-email/render";
-import { NextResponse } from "next/server";
 import { sendEmail } from "@/lib/email";
 
 

@@ -1,6 +1,13 @@
-import "./globals.css";
 import type { Metadata } from "next";
+import { Toaster } from "sonner";
+
+//Styles
+import "./globals.css";
+
+//Font
 import { Inter } from "next/font/google";
+
+//Component
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -22,6 +29,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Toaster richColors position="top-center" closeButton />
       </body>
     </html>
   );

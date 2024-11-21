@@ -42,18 +42,20 @@ const Quote = () => {
     //Function for the Form Reset
     const handleFormReset = () => {
         setFormValues(initialState);
+        setLoading(false);
     };
 
     // OnSubmit function
-    const onSubmit = (e: FormEvent) => {
+    const onSubmit = async (e: FormEvent) => {
 
         e.preventDefault()
         setLoading(true)
         toast.message("Submitting your quote request...")
 
         const formData = { ...formValues, state: userState, subject: "Quote Request", emailType: "quote" };
+        console.log({ formData })
 
-        makeApiRequest("/send-email", "post", formData, {
+        await makeApiRequest("/send-email", "post", formData, {
             onSuccess: () => {
                 toast.success("Quote requested! We'll get back to you soon.");
                 handleFormReset();
@@ -108,7 +110,7 @@ const Quote = () => {
                             {maxLength - formValues.description.length} characters remaining
                         </div>
                     </div>
-                    <button disabled={loading} type="submit" className={`border-headersColor bg-headersColor hover:bg-white mt-5 px-4 py-3 border-r-4 rounded-md w-full font-medium text-white hover:text-containerColor duration-300`}>
+                    <button disabled={loading} type="submit" className={`${loading ? "bg-gray-600 border-red-600 cursor-not-allowed" : "border-headersColor bg-headersColor hover:bg-white  hover:text-containerColor"} text-white mt-5 px-4 py-3 border-r-4 rounded-md w-full font-medium duration-300`}>
                         Submit
                     </button>
                 </form>

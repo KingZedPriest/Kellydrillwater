@@ -8,7 +8,7 @@ type EmailPayload = {
 
 export const sendEmail = async (data: EmailPayload) => {
   const transporter = nodemailer.createTransport({
-    host: "smtp.hostinger.com",
+    host: "smtp.zoho.com",
       port: 465,
       secure: true, // true for 465, false for other ports
       auth: {

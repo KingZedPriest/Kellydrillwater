@@ -5,12 +5,7 @@ interface ApiRequestOptions extends AxiosRequestConfig {
   onError?: (error: any) => void;
 }
 
-export const makeApiRequest = (
-  endpoint: string,
-  method: 'get' | 'post' | 'put' | 'delete',
-  data?: any,
-  options?: ApiRequestOptions
-): Promise<AxiosResponse<any>> => {
+export const makeApiRequest = (endpoint: string, method: 'get' | 'post' | 'put' | 'delete', data?: any, options?: ApiRequestOptions): Promise<AxiosResponse<any>> => {
   const { onSuccess, onError, ...axiosOptions } = options || {};
 
   return axios({
@@ -23,14 +18,20 @@ export const makeApiRequest = (
       if (onSuccess) {
         onSuccess(response);
       }
-      //console.log(response)
+      // Log response only in development
+      if (process.env.NODE_ENV === 'development') {
+        console.log(response);
+      }
       return response;
     })
     .catch((error: any) => {
       if (onError) {
         onError(error);
       }
-      //console.log(error)
+      // Log error only in development
+      if (process.env.NODE_ENV === 'development') {
+        console.log(error);
+      }
       throw error;
     });
 };
