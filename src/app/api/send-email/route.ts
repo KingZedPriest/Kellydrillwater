@@ -1,5 +1,6 @@
 //Templates
 import NotificationTemplate from "../../../../email/NotifyTemplate";
+import QuoteTemplate from "../../../../email/QuoteTemplate";
 
 //Needed Utils and Lib
 import { render } from "@react-email/render";
@@ -8,37 +9,41 @@ import { sendEmail } from "@/lib/email";
 
 
 export async function POST(request: Request) {
-    const body = await request.json();
-    try {
-        const { subject, emailType, name, email, message } = body;
+  const body = await request.json();
+  try {
+    const { subject, emailType, name, email, message, state, address, description } = body;
 
-        if ( !subject || !emailType ) throw new Error('Fill in the fields')
+    if (!subject || !emailType) throw new Error('Fill in the fields')
 
-        let emailHtml;
+    let emailHtml;
 
-        switch (emailType) {
-          
-          case "notification":
-            emailHtml = render(NotificationTemplate({name, email, message}));
-            break;
-          
-          default:
-            throw new Error('Invalid emailType');
-        }
+    switch (emailType) {
 
-      await sendEmail({
-        to: "Charleschukwuemeka47@gmail.com",
-        subject,
-        html: emailHtml,
-      });
+      case "notification":
+        emailHtml = render(NotificationTemplate({ name, email, message }));
+        break;
 
-      return new NextResponse('Email Send Successfully', { status: 200 })
+      case "quote":
+        emailHtml = render(QuoteTemplate({ state, email, address, description }));
+        break;
 
-    }catch (error) {
-        if (error instanceof Error) {
-          return new NextResponse(error.message);
-        } else {
-          return new NextResponse('Internal Server Error', { status: 500 });
-        }
+      default:
+        throw new Error('Invalid emailType');
     }
+
+    await sendEmail({
+      to: process.env.RECEIVING_EMAIL!,
+      subject,
+      html: emailHtml,
+    });
+
+    return new NextResponse('Email Send Successfully', { status: 200 })
+
+  } catch (error) {
+    if (error instanceof Error) {
+      return new NextResponse(error.message);
+    } else {
+      return new NextResponse('Internal Server Error', { status: 500 });
+    }
+  }
 }
