@@ -73,3 +73,9 @@ body::-webkit-scrollbar-track {
 .special::-webkit-scrollbar-track {
   background: #f0f0f0;
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
