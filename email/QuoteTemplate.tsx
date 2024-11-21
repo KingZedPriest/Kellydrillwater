@@ -1,4 +1,4 @@
-import { Body, Container, Head, Heading, Hr, Html, Img, Link, Preview, Section, Text } from "@react-email/components";
+import { Body, Container, Head, Heading, Hr, Html, Img, Preview, Section, Text } from "@react-email/components";
 
 type quoteProps = {
     state: string;
@@ -16,6 +16,7 @@ export default function LoginAuthenticationTemplate({ state, email, address, des
                 <Container style={container}>
                     <Section style={coverSection}>
                         <Section style={imageSection}>
+                            <Img style={image} src="https://res.cloudinary.com/dpmx02shl/image/upload/v1732177542/mainLogo_evs04n.png" alt="Kelly Drill Logo" />
                         </Section>
                         <Section style={upperSection}>
                             <Heading style={h1}>Quote Request</Heading>

@@ -15,6 +15,7 @@ export default function LoginAuthenticationTemplate({ name, email, message }: No
         <Container style={container}>
           <Section style={coverSection}>
             <Section style={imageSection}>
+              <Img style={image}  src="https://res.cloudinary.com/dpmx02shl/image/upload/v1732177542/mainLogo_evs04n.png" alt="Kelly Drill Logo" />
             </Section>
             <Section style={upperSection}>
               <Heading style={h1}>Contact Request</Heading>
