@@ -53,7 +53,6 @@ const Quote = () => {
         toast.message("Submitting your quote request...")
 
         const formData = { ...formValues, state: userState, subject: "Quote Request", emailType: "quote" };
-        console.log({ formData })
 
         await makeApiRequest("/send-email", "post", formData, {
             onSuccess: () => {

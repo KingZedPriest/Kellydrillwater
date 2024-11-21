@@ -11,7 +11,6 @@ export default function LoginAuthenticationTemplate({ state, email, address, des
     return (
         <Html>
             <Head />
-            <Preview>Quote Request</Preview>
             <Body style={main}>
                 <Container style={container}>
                     <Section style={coverSection}>
@@ -23,7 +22,7 @@ export default function LoginAuthenticationTemplate({ state, email, address, des
                             <Text style={mainText}>
                                 <p>Client&apos;s Email: {email}</p>
                                 <p>Client&apos;s Address: {address}</p>
-                                <p>Client&apos;s State: {state}</p>
+                                <p>Client&apos;s State: {state.toUpperCase()}</p>
                                 <p>Client&apos;s Work Description: {description}</p>
                             </Text>
                         </Section>
@@ -74,6 +73,7 @@ const imageSection = {
 
 const image = {
     display: "block",
+    height: "40px",
     margin: "0 auto",
 };
 

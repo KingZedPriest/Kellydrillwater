@@ -10,7 +10,6 @@ export default function LoginAuthenticationTemplate({ name, email, message }: No
   return (
     <Html>
       <Head />
-      <Preview>Notification</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={coverSection}>
@@ -72,6 +71,7 @@ const imageSection = {
 
 const image = {
   display: "block",
+  height: "40px",
   margin: "0 auto",
 };
 
