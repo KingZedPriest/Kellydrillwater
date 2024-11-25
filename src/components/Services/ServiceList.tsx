@@ -25,7 +25,7 @@ const services = [
     { src: tank, alt: "Tank", preview: "tank", title: "Tank Stand Building", body: "Construct durable and efficient tank stands tailored to your storage needs. Our structures are built to last and maximize water use." },
     { src: training, alt: "Training", preview: "training", title: "Professional Training", body: "Gain essential skills in borehole maintenance, equipment handling, and water system management through hands-on training sessions." },
     { src: rentMachine, alt: "Rent Machines", preview: "rentMachines", title: "Machine Rentals", body: "Rent high-quality tools and machines for drilling, pumping, and borehole maintenance. Perfect for both small and large-scale projects." },
-    { src: hydrogeophysical, alt: "Hydro Geophysical", preview: "hydroGeophysical", title: "Hydrogeophysical Survey", body: "Get professional guidance on hydrogeophysical surveys and pump installations. We ensure precise assessments and seamless execution at every stage." },
+    { src: hydrogeophysical, alt: "Hydro Geophysical", preview: "hydroGeophysical", title: "Hydrogeophysical Survey", body: "Get professional guidance on hydrogeophysical surveys. We ensure precise assessments and seamless execution at every stage." },
     { src: pumpInstallation, alt: "Pump Installation", preview: "pumpInstallation", title: "Pump Installation", body: "Ensure reliable pump installation with expert support. We provide precision, efficiency, and guidance every step of the way." }
 ]
 
@@ -67,10 +67,27 @@ const ServiceList = () => {
                                 <p className="font-semibold text-sm md:text-base xl:text-lg">{service.title}</p>
                                 <ArrowRight size="20" />
                             </div>
-                            <p className="text-[10px] xl:text-sm md:text-xs">{service.body}</p>
+                            <p>{service.body}</p>
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="mt-10 font-bold text-base text-linkColor sm:text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
+                <h3>Other Services</h3>
+            </div>
+            <div className="flex flex-col gap-y-5 mt-6">
+                <div>
+                    <p className="font-semibold text-sm text-textColor md:text-base xl:text-lg">
+                        Pilling
+                    </p>
+                    <p className="mt-2 max-w-[90ch]">Delivering expert solutions for piling, we ensure a strong and stable foundation for your projects. Our services cover every stage, from site assessment and equipment selection to precise execution, utilizing advanced techniques to guarantee safety and efficiency. Trust us to provide durable and reliable piling solutions tailored to your specific needs.</p>
+                </div>
+                <div>
+                    <p className="font-semibold text-sm text-textColor md:text-base xl:text-lg">
+                        Procurement of Water Drilling Machines
+                    </p>
+                    <p className="mt-2 max-w-[90ch]">Secure the best water drilling machines for your needs with our comprehensive procurement services. We guide you in selecting high-quality, reliable, and efficient equipment that meets industry standards and suits the unique requirements of your projects. From consultation to delivery, we ensure a seamless process, empowering you with the tools needed for successful water drilling operations.</p>
+                </div>
             </div>
         </main>
     );
