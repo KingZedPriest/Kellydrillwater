@@ -84,18 +84,18 @@ const Quote = () => {
                     <div className="flex flex-wrap gap-3">
                         {states.map((state) => (
                             <div key={state.name} onClick={() => handleStateChange(state.name)}
-                                className={`${userState === state.name ? "bg-white border-headersColor border-2 text-headersColor" : "bg-headersColor text-white"} p-2 md:p-3 rounded-md w-fit capitalize cursor-pointer`}>
+                                className={`${userState === state.name ? "bg-white border-headersColor border-2 text-headersColor" : "bg-headersColor text-white hover:bg-white hover:text-headersColor duration-300"} px-6 py-2 rounded-md w-fit capitalize cursor-pointer`}>
                                 {state.name}
                             </div>
                         ))}
                     </div>
                     <div className="flex flex-col gap-y-1 mt-5">
                         <label className="font-medium text-black/70 cursor-pointer" htmlFor="email">Email</label>
-                        <input required value={formValues.email} onChange={handleChange} type="email" name="email" id="email" className="px-5 py-3 border rounded-md focus:ring-1 focus:ring-headersColor focus:outline-none caret-headersColor" placeholder="Johndoe@gmail.com" />
+                        <input required value={formValues.email} onChange={handleChange} type="email" name="email" id="email" className="px-5 py-3 border rounded-md focus:ring-1 focus:ring-headersColor caret-headersColor focus:outline-none" placeholder="Johndoe@gmail.com" />
                     </div>
                     <div className="flex flex-col gap-y-1 mt-5">
                         <label className="font-medium text-black/70 cursor-pointer" htmlFor="address">State Address</label>
-                        <input required type="text" value={formValues.address} onChange={handleChange} name="address" id="address" className="px-5 py-3 border rounded-md focus:ring-1 focus:ring-headersColor focus:outline-none caret-headersColor" placeholder="Ukwuoji Awka, Anambra State." />
+                        <input required type="text" value={formValues.address} onChange={handleChange} name="address" id="address" className="px-5 py-3 border rounded-md focus:ring-1 focus:ring-headersColor caret-headersColor focus:outline-none" placeholder="Ukwuoji Awka, Anambra State." />
                     </div>
                     <div className="flex flex-col gap-y-1 mt-5">
                         <label className="font-medium text-black/70 cursor-pointer" htmlFor="description">Project Description</label>
