@@ -77,18 +77,18 @@ const ServiceList = () => {
             <div className="mt-10 font-bold text-base text-linkColor sm:text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
                 <h3>Other Services</h3>
             </div>
-            <div className="flex flex-col gap-y-5 mt-6">
-                <div>
+            <div className="flex lg:flex-row flex-col lg:justify-between gap-5 mt-6">
+                <div className="lg:w-[45%]">
                     <p className="font-semibold text-sm text-textColor md:text-base xl:text-lg">
                         Pilling
                     </p>
-                    <p className="mt-2 max-w-[90ch]">Delivering expert solutions for piling, we ensure a strong and stable foundation for your projects. Our services cover every stage, from site assessment and equipment selection to precise execution, utilizing advanced techniques to guarantee safety and efficiency. Trust us to provide durable and reliable piling solutions tailored to your specific needs.</p>
+                    <p className="mt-2">Delivering expert solutions for piling, we ensure a strong and stable foundation for your projects. Our services cover every stage, from site assessment and equipment selection to precise execution, utilizing advanced techniques to guarantee safety and efficiency. Trust us to provide durable and reliable piling solutions tailored to your specific needs.</p>
                 </div>
-                <div>
+                <div className="lg:w-[45%]">
                     <p className="font-semibold text-sm text-textColor md:text-base xl:text-lg">
                         Procurement of Water Drilling Machines
                     </p>
-                    <p className="mt-2 max-w-[90ch]">Secure the best water drilling machines for your needs with our comprehensive procurement services. We guide you in selecting high-quality, reliable, and efficient equipment that meets industry standards and suits the unique requirements of your projects. From consultation to delivery, we ensure a seamless process, empowering you with the tools needed for successful water drilling operations.</p>
+                    <p className="mt-2">Secure the best water drilling machines for your needs with our comprehensive procurement services. We guide you in selecting high-quality, reliable, and efficient equipment that meets industry standards and suits the unique requirements of your projects. From consultation to delivery, we ensure a seamless process, empowering you with the needed tools.</p>
                 </div>
             </div>
         </main>
