@@ -25,8 +25,8 @@ const testimonials: Testimonial[] = [
     {
         id: 2,
         name: "S. Udechukwu",
-        role: "Former General Supervisor Nchawaa Services Ltd, Ukpommili",
-        content: "The job you did last year for us (Nchawaa Services Ltd) is very ok. The drilled borehole has been serving well. The water quality is good. We have been benefiting a lot since our company installed the aquifer water. We will recommend your drilling company to others in need of your services. Wishing you the best.",
+        role: "Former General Supervisor",
+        content: "The job you did last year for us (Nchawaa Services Ltd, Ukpommili) is very ok. The drilled borehole has been serving well. The water quality is good. We have been benefiting a lot since our company installed the aquifer water. We will recommend your drilling company to others in need of your services. Wishing you the best.",
         rating: 5,
     },
     {
@@ -132,4 +132,3 @@ const Testimonial = () => {
 }
 
 export default Testimonial;
-

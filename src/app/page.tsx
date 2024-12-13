@@ -6,6 +6,7 @@ import ThirdSection from "@/components/homePage/machineExplanation";
 import FourthSection from "@/components/homePage/Ourservices";
 import FifthSection from "@/components/homePage/OurGallery";
 import SixthSection from "@/components/homePage/Quote";
+import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
       </ScrollReveal>
       <ScrollReveal>
         <SixthSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Testimonial />
       </ScrollReveal>
     </main>
   )
