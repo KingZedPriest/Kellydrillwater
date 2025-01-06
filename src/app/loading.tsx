@@ -20,7 +20,7 @@ export default function Loading() {
         {/* Loading indicator */}
         <div className="flex justify-center items-center gap-2 text-primary">
           <div className="border-2 border-primary border-r-transparent rounded-full w-4 h-4 animate-spin" />
-          <span className="font-medium text-sm">Loading...</span>
+          <span className="font-medium text-sm text-textColor">Loading...</span>
         </div>
       </div>
     </div>
