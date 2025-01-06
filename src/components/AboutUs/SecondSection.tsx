@@ -16,10 +16,10 @@ const SecondSection = () => {
                     <h3>Vision, and Purpose</h3>
                 </div>
             </div>
-            <div className="gap-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20 text-textColor">
+            <div className="gap-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20">
                 {values.map((value, index) => (
                     <div key={`value ${index}`} className="shadow-[1px_1px_4.8px_0px_rgba(0,_0,_0,_0.2)] px-3 md:px-4 py-6 md:py-8 rounded-[4px]">
-                        <p className="font-extrabold text-xs sm:text-sm md:text-base xl:text-lg">{value.heading}</p>
+                        <p className="font-extrabold text-textColor text-xs sm:text-sm md:text-base xl:text-lg">{value.heading}</p>
                         <p className="mt-6 md:mt-10 max-w-[40ch] font-medium">{value.body}</p>
                     </div>
                 ))}

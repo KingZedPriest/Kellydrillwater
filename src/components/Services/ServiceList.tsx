@@ -6,10 +6,10 @@ import Link from "next/link";
 
 //Images
 import newBorehole from "../../../public/newBorehole.jpg";
-import boreholeRepair from "../../../public/boreholeRepair.jpg";
-import boreholeService from "../../../public/boreholeService.jpg";
+import boreholeService from "../../../public/office.jpg";
+import boreholeRevival from "../../../public/boreholeService.jpg";
 import tank from "../../../public/tank.jpg";
-import training from "../../../public/machine1.jpg";
+import training from "../../../public/training.jpg";
 import rentMachine from "../../../public/rentMachine.jpg";
 import pumpInstallation from "../../../public/pumpInstallation.jpg";
 import hydrogeophysical from "../../../public/hydrogeophysical.jpg";
@@ -21,7 +21,7 @@ import { ArrowRight } from "iconsax-react";
 //Services Data
 const services = [
     { src: newBorehole, alt: "New Borehole", preview: "newBorehole", title: "Borehole Drilling", body: "Drill reliable boreholes for clean and sustainable water access. Our team ensures precision and long-lasting solutions for your needs." },
-    { src: boreholeRepair, alt: "Bore Hole Repairs", preview: "boreholeRepair", title: "Borehole Revival", body: "Unblock old or damaged boreholes and restore optimal water flow. We specialize in cleaning and repairing systems to bring them back to life." },
+    { src: boreholeRevival, alt: "Bore Hole Repairs", preview: "boreholeRepair", title: "Borehole Revival", body: "Unblock old or damaged boreholes and restore optimal water flow. We specialize in cleaning and repairing systems to bring them back to life." },
     { src: boreholeService, alt: "Service Boreholes", preview: "boreholeService", title: "Consultations & Services", body: "Receive expert advice for site surveys, water system design, and efficient implementation. We guide you every step of the way." },
     { src: tank, alt: "Tank", preview: "tank", title: "Tank Stand Building", body: "Construct durable and efficient tank stands tailored to your storage needs. Our structures are built to last and maximize water use." },
     { src: training, alt: "Training", preview: "training", title: "Professional Training", body: "Gain essential skills in borehole maintenance, equipment handling, and water system management through hands-on training sessions." },
@@ -86,7 +86,7 @@ const ServiceList = () => {
                 </div>
                 <div className="lg:w-[45%]">
                     <p className="font-semibold text-sm text-textColor md:text-base xl:text-lg">
-                        Procurement of Water Drilling Machines
+                        Procurement of Drilling Tools and Equipment
                     </p>
                     <p className="mt-2">Secure the best water drilling machines for your needs with our comprehensive procurement services. We guide you in selecting high-quality, reliable, and efficient equipment that meets industry standards and suits the unique requirements of your projects. From consultation to delivery, we ensure a seamless process, empowering you with the needed tools.</p>
                 </div>

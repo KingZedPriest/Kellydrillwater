@@ -59,7 +59,7 @@ const ContactForm = () => {
                         </div>
                         <div className="flex flex-col gap-y-1 mt-8">
                             <p className="text-black/50">Contacts</p>
-                            <p className="mt-2">Contactus@kellydrillwater.com</p>
+                            <p className="mt-2">Contact@kellydrillwater.com</p>
                             <p>+234 816 024 4412</p>
                         </div>
                     </div>
@@ -69,15 +69,15 @@ const ContactForm = () => {
                 <form onSubmit={onSubmit} className="flex flex-col gap-y-5 mx-auto p-4 sm:p-6 md:p-8 xl:p-10 border rounded-md w-full lg:w-[90%] xl:w-[80%]">
                     <div className="flex flex-col gap-y-1">
                         <label className="cursor-pointer" htmlFor="name">Name</label>
-                        <input required value={name} onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)} type="text" name="name" id="name" className="focus:border-headersColor px-5 py-3 border rounded-md focus:outline-none caret-headersColor" placeholder="John Doe" />
+                        <input required value={name} onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)} type="text" name="name" id="name" className="focus:border-headersColor px-5 py-3 border rounded-md caret-headersColor focus:outline-none" placeholder="John Doe" />
                     </div>
                     <div className="flex flex-col gap-y-1">
                         <label className="cursor-pointer" htmlFor="email">Email</label>
-                        <input required value={email} onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}  type="email" name="email" id="email" className="focus:border-headersColor px-5 py-3 border rounded-md focus:outline-none caret-headersColor" placeholder="Johndoe@gmail.com" />
+                        <input required value={email} onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}  type="email" name="email" id="email" className="focus:border-headersColor px-5 py-3 border rounded-md caret-headersColor focus:outline-none" placeholder="Johndoe@gmail.com" />
                     </div>
                     <div className="flex flex-col gap-y-1">
                         <label className="cursor-pointer" htmlFor="message">Your Message</label>
-                        <textarea onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}  value={message} name="message" id="message" className="focus:border-headersColor px-5 py-3 border rounded-md h-32 focus:outline-none caret-headersColor resize-none" placeholder="Your Message"></textarea>
+                        <textarea onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}  value={message} name="message" id="message" className="focus:border-headersColor px-5 py-3 border rounded-md h-32 caret-headersColor focus:outline-none resize-none" placeholder="Your Message"></textarea>
                     </div>
                     <input disabled={loading} required type="submit" value={`${loading ? "Submitting" : "Submit"}`} name="submit" id="submit" className="border-2 border-headersColor bg-headersColor hover:bg-white mt-10 py-3 md:py-4 rounded-md font-medium text-white hover:text-headersColor cursor-pointer"/>
                 </form>
